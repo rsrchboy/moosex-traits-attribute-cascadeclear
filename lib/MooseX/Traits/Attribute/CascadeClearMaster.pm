@@ -19,7 +19,7 @@ package MooseX::Traits::Attribute::CascadeClearMaster;
 
 use Moose::Role;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 #use Smart::Comments '###', '####';
 
@@ -91,7 +91,7 @@ __END__
 
 =head1 NAME
 
-Moose::Meta::Attribute::Custom::Traits::CascadeClearMaster - cascade clearer actions
+MooseX::Traits::Attribute::CascadeClearMaster - Master clearer metatrait
 
 =head1 SYNOPSIS
 

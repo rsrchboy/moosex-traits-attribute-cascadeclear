@@ -19,7 +19,7 @@ package MooseX::Traits::Attribute::CascadeClear;
 
 use Moose::Role;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 has clear_on => (
     is        => 'rw',

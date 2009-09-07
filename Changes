@@ -1,5 +1,8 @@
 Revision history for MooseX-Traits-Attribute-CascadeClear
 
+0.02    Mon Dec 29 20:39:31 PST 2008
+- correct MooseX::Traits::Attribute::CascadeClearMaster pod
+
 0.01    Sun Dec 28 16:24:47 PST 2008
 - initial release
 
