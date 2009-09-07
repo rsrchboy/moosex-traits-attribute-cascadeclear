@@ -6,7 +6,7 @@ package Module::Install::ExtraTests;
 use Module::Install::Base;
 
 BEGIN {
-  our $VERSION = '0.004';
+  our $VERSION = '0.006';
   our $ISCORE  = 1;
   our @ISA     = qw{Module::Install::Base};
 }
@@ -66,7 +66,7 @@ sub __harness {
   # out on the command line can blow over its exec limit.
   require ExtUtils::Command;
   push @ARGV, __PACKAGE__->_deep_t($author_tests)
-    if $author_tests and $is_author;
+    if $author_tests and (exists $ENV{AUTHOR_TESTING} ? $ENV{AUTHOR_TESTING} : $is_author);
 
   push @ARGV, __PACKAGE__->_deep_t($release_tests)
     if $release_tests and $ENV{RELEASE_TESTING};

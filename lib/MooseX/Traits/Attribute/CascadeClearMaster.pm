@@ -19,7 +19,7 @@ package MooseX::Traits::Attribute::CascadeClearMaster;
 
 use Moose::Role;
 
-our $VERSION = '0.02';
+our $VERSION = 0.03;
 
 #use Smart::Comments '###', '####';
 

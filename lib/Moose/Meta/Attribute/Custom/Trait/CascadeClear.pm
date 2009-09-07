@@ -20,7 +20,7 @@ package Moose::Meta::Attribute::Custom::Trait::CascadeClear;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = 0.03;
 
 sub register_implementation { 'MooseX::Traits::Attribute::CascadeClear' }
 

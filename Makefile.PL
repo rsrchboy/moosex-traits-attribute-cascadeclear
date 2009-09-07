@@ -7,8 +7,8 @@ author   'Chris Weyl <cweyl@alumni.drew.edu>';
 test_requires 'Test::More';
 test_requires 'FindBin';
 
-requires 'Moose';
-requires 'Moose::Role';
+requires 'Moose'        => 0.64;
+requires 'Moose::Role'  => 0.64;
 
 extra_tests;
 

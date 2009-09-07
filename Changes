@@ -1,5 +1,9 @@
 Revision history for MooseX-Traits-Attribute-CascadeClear
 
+0.03    Sat Jan 17 12:13:04 PST 2009
+- add a minimum version of Moose to Makefile.PL (0.64); this should address
+  some tester failures.
+
 0.02    Mon Dec 29 20:39:31 PST 2008
 - correct MooseX::Traits::Attribute::CascadeClearMaster pod
 
