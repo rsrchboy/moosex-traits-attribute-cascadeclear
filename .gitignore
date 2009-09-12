@@ -1,0 +1,10 @@
+*.bak
+*.orig
+*.gz
+*.tar
+META.yml
+inc/
+blib/
+Makefile
+pm_to_blib
+MooseX-Traits-Attribute-CascadeClear-*
