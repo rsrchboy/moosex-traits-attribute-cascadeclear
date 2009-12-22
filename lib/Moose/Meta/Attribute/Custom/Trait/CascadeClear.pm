@@ -20,9 +20,9 @@ package Moose::Meta::Attribute::Custom::Trait::CascadeClear;
 use strict;
 use warnings;
 
-our $VERSION = 0.03;
+our $VERSION = '0.04';
 
-sub register_implementation { 'MooseX::Traits::Attribute::CascadeClear' }
+warn 'This trait is non-functional; see MooseX::CascadeClearer instead!';
 
 1;
 

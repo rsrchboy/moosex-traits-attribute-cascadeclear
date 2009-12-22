@@ -17,18 +17,9 @@
 
 package MooseX::Traits::Attribute::CascadeClear;
 
-use Moose::Role;
+our $VERSION = '0.04';
 
-our $VERSION = 0.03;
-
-has clear_on => (
-    is        => 'rw',
-    isa       => 'Str',
-    predicate => 'has_clear_on',
-    clearer   => 'clear_clear_on',
-);
-
-no Moose::Role;
+die 'This package is non-functional; please see MooseX::CascadeClearing!';
 
 1;
 
@@ -36,69 +27,16 @@ __END__
 
 =head1 NAME
 
-MooseX::Traits::Attribute::CascadeClear - Attribute trait to cascade clearer actions
+MooseX::Traits::Attribute::CascadeClear - [DEFUNCT] Attribute trait to cascade clearer actions
 
-=head1 SYNOPSIS
+=head1 SYNOPSIS 
 
-    # our "master" attribute
-    has master => (
-        # overrides our clearer method 
-        traits     => [ 'CascadeClearMaster' ], 
-        is         => 'rw',
-        isa        => 'Str',
-        lazy       => 1,
-        default    => 'nuts',
-    );
-
-    has client1 => (
-        # mark us for clearing on clear_master()
-        traits   => [ 'CascadeClear' ], 
-        clear_on => 'master', 
-        is       => 'ro', 
-        isa      => 'Str', 
-        lazy     => 1,
-        default  => sub { shift->master . "1" }
-    );
-
-=head1 DESCRIPTION
-
-CascadeClearer is an attribute metaclass trait that allows one to chain
-attribute clearing actions.  For instance, if you have attributes that derive
-their value from a "master" attribute, this would transparently allow you to
-clear all the children attributes by clearing the master attribute.
-
-=head1 USAGE
-
-This trait provides an additional option to attributes, I<clear_on>.  It
-should be used in conjunction with I<CascadeClearMaster> (aka
-L<Moose::Meta::Attribute::Custom::Traits::CascadeClearMaster>).  As attributes
-are defined, this trait should be specified and the clear_on attribute
-declared.  Declaring a non-existant attribute in I<clear_on> causes neither an
-error nor a warning.
-
-To use, simply declare B<CascadeClear> as one of your attributes traits, then
-designate its master attribute through I<clear_on>.  The client attribute does
-not need to have a clearer defined, but if it does, it will be used.
+This trait is non-functional and obsolete.  Please see
+L<MooseX::CascadeClearing>.
 
 =head1 SEE ALSO
 
-L<MooseX::Traits::Attribute::CascadeClearMaster>
-
-This package is part of the Fedora Project's Perl SIG work.  For more
-information, see:
-
-    http://fedoraproject.org
-    http://fedoraproject.org/wiki/Perl
-    http://camelus.fedorahosted.org
-
-=head1 BUGS AND LIMITATIONS
-
-There are no known bugs in this module.
-
-Please report problems or requests to this package's RT tracker at 
-<bug-MooseX-Traits-Attribute-CascadeClear@rt.cpan.org>.
-
-Patches are welcome.
+L<MooseX::CascadeClearing>
 
 =head1 AUTHOR
 

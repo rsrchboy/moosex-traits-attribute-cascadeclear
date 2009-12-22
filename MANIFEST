@@ -20,12 +20,6 @@ MANIFEST
 META.yml
 README
 t/000-load.t
-t/001-load-master.t
-t/010-simple-cascade.t
-t/011-cascaded-cascades.t
-t/012-cascade-wo-calling-clear.t
-t/lib/DoubleCascade.pm
-t/lib/SingleCascade.pm
 xt/author/boilerplate.t
 xt/author/pod-coverage.t
 xt/author/pod.t
